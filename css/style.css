@@ -269,11 +269,7 @@ body {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-}
-
-.features-soc-link:hover {
-  background-color: #2196f3;
-  fill: #ffffff;
+  cursor: auto;
 }
 
 .work {
@@ -309,6 +305,12 @@ body {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.all-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .all-tilte {
@@ -415,6 +417,44 @@ body {
   fill: #ffffff;
 }
 
+/* --------------------Clients--------------------- */
+
+.client {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.client-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-soc-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-soc-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.client-soc-link:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
 /* ---------------------supporting information--------------------- */
 
 .logo-ftr {
@@ -461,13 +501,50 @@ body {
   color: var(--theme-btn-fcs);
 }
 
-.section-ftr .container {
-  display: flex;
-  flex-direction: column;
-}
-
 .adress-list {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+}
+
+.join-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-soc-list {
+  display: flex;
+}
+
+.join-soc-item + .join-soc-item {
+  margin-left: 10px;
+}
+
+.join-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+}
+
+.join-soc-link:hover {
+  background-color: #2196f3;
+}
+
+.contact-wrap .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.contacts {
+  margin-left: 70px;
 }
